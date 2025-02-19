@@ -1,0 +1,67 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation menu */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+/* Hover effect on menu items */
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Style for sections */
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* Background colors for different sections */
+#home { background-color: #1e90ff; }
+#about { background-color: #ff4500; }
+#services { background-color: #32cd32; }
+#contact { background-color: #800080; }
+
+/* Change navbar background color when scrolled */
+.scrolled {
+    background-color: black;
+}
